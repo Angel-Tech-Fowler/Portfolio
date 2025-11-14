@@ -1,62 +1,79 @@
-<html>
-
-
-
-
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>
-       Angel Digital HTML Portolio
-
-    </title>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Fowler - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/me.JPG">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h1>Angel Alexander Fowler</h1>
-    <h2>ABOUT ME!!!!</h2>
-    <header>    My name is angel alexander fowler, and I am going to be specializing in the field of computerscience, software development and coding.
-    at my school, I am also a varsity <a href="images/image0.webp"target="_blank">Wrestler.</a> along with wrestling I also do <a href="images/image0 (1).webp" target="_blank">Juijutsu.</a>
-    I also got my black belt in taekwondo at the age of 7. Ive been doing combat sports for many years and i also used to play baseball. so overall I like to: 
-    <ol>
-        <li>Wrestleing</li>
-        <li>Juijutsu</li>
-        <li>Taekwondo</li>
-    </ol>
-        Outside of my athletic and career related activities I like to create games on platforms like Roblox and unity.
-    Right now im working on a hardcore fanbtasy rpg game called OneLife that will be on the platform roblox. <a href="images/onelife.png" target="_blank">(My games logo).</a>
-    currently the game is still in development but it will be out soon! (maybe) 
-    The game includes theme's of 
-    <ul>
-        <li>Fantasy</li>
-        <li>harcore</li>
-        <li>multiplayer</li>
-        <li>RPG</li>
 
-    </ul>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(to right, forestgreen, seagreen);">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Angel Fowler</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center py-5">
+        <h1 class="display-4">👋 Hi, I'm Angel Fowler</h1>
+        <p class="lead">Aspiring Software Developer</p>
     </header>
 
-    <img src="images/me.jpg" alt="Photo of Me" width="200">
-    <p>Welcome to my portfolio. This is my first website project.</p>
-    <a href="images/me.jpg">THIS IS ME YO!</a>
-    <a href="mailto:turtlesaveg1739@gmail.com">
-        email me
-    </a>
+    <main class="container my-5">
+        <section id="about" class="row align-items-center mb-5">
+            <div class="col-md-4 text-center">
+                <img src="images/me.JPG" alt="Headshot of Angel Fowler" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Welcome to my portfolio! I'm passionate about <strong>web technologies</strong> 🌐,
+                    with growing skills in <em>HTML, CSS, JavaScript, Python, and Unity game development</em>.
+                </p>
+                <p>You’ve visited this page <span id="visit-count">0</span> times.</p>
+            </div>
+        </section>
 
+        <section id="media" class="mb-5">
+            <h2 class="mb-3">Featured Video</h2>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/t_Wt1xLWr4s" title="Relevant Embedded Video" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="extras">
+            <h2>Interactive Demos</h2>
+            <div class="mb-4">
+                <h3>Canvas Drawing</h3>
+                <canvas id="myCanvas" width="300" height="100" class="border border-dark rounded"></canvas>
+            </div>
+            <div>
+                <h3>Audio Element</h3>
+                <audio controls class="w-100">
+                    <source src="images/Vine Boom Sound Effect.MP3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light text-center py-3">
+        <p>Made with ❤️ in West Virginia &copy; 2025 Angel Fowler</p>
+    </footer>
+
+    <script src="bootstrap.bundle.js"></script>
 </body>
-
-
-
-
 </html>
